@@ -14,18 +14,33 @@ const words = [{
     definition: "figure of speech that juxtaposes elements that appear to be contradictory"
   }];
 
+/* 
+<div>
+<dl>
+    <dt><strong>   </strong></dt>
+    <dd><strong>   </strong></dd>
+</dl>
+</div> */
 
-const divElement = document.getElementById("content");
+
+const divContent = document.getElementById("content");
+const dlTag = document.createElement("dl");
+
 words.forEach(word => {
-    const termNode = document.createElement("dt");
-    const strongNode = document.createElement("strong");
-    const termNodeTxt = document.createTextNode(word.term);
-    termNode.appendChild(strongNode).appendChild(termNodeTxt);
-    divElement.appendChild(termNode);
+  const dtTag = document.createElement("dt");
+  const ddTag = document.createElement("dd");
+  const strongTag = document.createElement("strong");
+  const termText = document.createTextNode(word.term);
+  const definitionText = document.createTextNode(word.definition);
 
-    const defNode = document.createElement("dd");
-    const defNodeTxt = document.createTextNode(word.definition);
-    defNode.appendChild(defNodeTxt);
-    divElement.appendChild(defNode);
+  dtTag.appendChild(strongTag).appendChild(termText);
+  ddTag.appendChild(definitionText);
+  dlTag.appendChild(dtTag);
+  dlTag.appendChild(ddTag);
+  divContent.appendChild(dlTag);
+
 });
-    
+
+
+
+
