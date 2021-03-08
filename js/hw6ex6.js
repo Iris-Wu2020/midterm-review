@@ -18,7 +18,7 @@ const words = [{
 <div>
 <dl>
     <dt><strong>   </strong></dt>
-    <dd><strong>   </strong></dd>
+    <dd>                    </dd>
 </dl>
 </div> */
 
