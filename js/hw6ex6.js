@@ -33,7 +33,7 @@ words.forEach(word => {
   const termText = document.createTextNode(word.term);
   const definitionText = document.createTextNode(word.definition);
 
-  dtTag.appendChild(strongTag).appendChild(termText);
+  dtTag.appendChild(strongTag).appendChild(termText); // consecutively appendChild v.s. one by one appendChild????????
   ddTag.appendChild(definitionText);
   dlTag.appendChild(dtTag);
   dlTag.appendChild(ddTag);
