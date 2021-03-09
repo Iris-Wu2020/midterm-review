@@ -1,11 +1,14 @@
+
 * {
     font-family: 'Calibri';
-};
+}
 
 tr.fourDivi {
-    background-color: blue;
-};
+    background-color:lightblue;
+}
 
-td {
+
+
+table {
     text-align: center;
-};
+}

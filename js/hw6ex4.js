@@ -24,10 +24,11 @@ for (let i = 1; i < 13; i++) {
     const dataText = document.createTextNode(i);
     trNode.appendChild(tdNode).appendChild(dataText);
     tableNode.appendChild(trNode);
-    divNode.appendChild(tableNode);
+    
 
 };
 
+divNode.appendChild(tableNode);
 tableNode.setAttribute("border", "2");
 tableNode.setAttribute("width", "30");
 
